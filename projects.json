@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "웹 애플리케이션 프로젝트",
+    "description": "모던한 웹 기술을 활용한 반응형 애플리케이션 개발",
+    "technologies": ["HTML", "CSS", "JavaScript", "React"],
+    "link": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "소프트웨어 교육 플랫폼",
+    "description": "학생들을 위한 인터랙티브한 프로그래밍 학습 시스템",
+    "technologies": ["Python", "Django", "JavaScript"],
+    "link": "https://example.com/project2"
+  }
+]
+
