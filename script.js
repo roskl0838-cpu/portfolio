@@ -62,7 +62,7 @@ function initContactForm() {
             // mailto 링크 생성
             const subject = encodeURIComponent(`포트폴리오 문의: ${name}`);
             const body = encodeURIComponent(`이름: ${name}\n이메일: ${email}\n\n메시지:\n${message}`);
-            const mailtoLink = `mailto:wkim@bible.ac.kr?subject=${subject}&body=${body}`;
+            const mailtoLink = `mailto:roskl0838@naver.com?subject=${subject}&body=${body}`;
 
             // 메일 클라이언트 열기
             window.location.href = mailtoLink;
