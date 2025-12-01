@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "프로젝트 작업",
+    "image": "./images/me.png",
+    "description": "팀 프로젝트 작업 중"
+  },
+  {
+    "id": 2,
+    "title": "학습 활동",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80",
+    "description": "공부하는 모습"
+  },
+  {
+    "id": 3,
+    "title": "프레젠테이션",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80",
+    "description": "프로젝트 발표"
+  },
+  {
+    "id": 4,
+    "title": "워크샵",
+    "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=80",
+    "description": "워크샵 참여"
+  },
+  {
+    "id": 5,
+    "title": "네트워킹",
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&q=80",
+    "description": "네트워킹 이벤트"
+  },
+  {
+    "id": 6,
+    "title": "성과물",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80",
+    "description": "프로젝트 성과물"
+  }
+]
+

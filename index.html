@@ -3,20 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김원빈 교수 - 포트폴리오</title>
+    <title>자기소개서 - 포트폴리오</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>로그인</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">아이디</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">비밀번호</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">로그인</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo">김원빈</div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="logo">자기소개서 ✨</div>
+                <div class="nav-right">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="검색..." class="search-input">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                        <li><a href="#" data-page="about" class="nav-link">About</a></li>
+                        <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button id="loginBtn" class="login-btn">로그인</button>
+                    <button id="logoutBtn" class="logout-btn" style="display: none;">로그아웃</button>
+                </div>
                 <button class="mobile-menu-toggle" aria-label="메뉴 토글">
                     <span></span>
                     <span></span>
@@ -26,57 +53,96 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">안녕하세요,<br>김원빈입니다</h1>
-                <p class="hero-subtitle">한국성서대학교 컴퓨터소프트웨어학과 교수</p>
-                <p class="hero-description">소프트웨어 개발과 교육에 열정을 가진 연구자입니다.</p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">안녕하세요! 👋<br>유주연입니다</h1>
+                        <p class="hero-subtitle">한국성서대학교 사회복지학과</p>
+                        <p class="hero-description">사회복지에 열정을 가진 학생입니다 💕</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- 프로젝트 카드가 여기에 동적으로 로드됩니다 -->
+            <div class="projects-section">
+                <div class="container">
+                    <h2 class="section-title">Projects 🎨</h2>
+                    <div class="projects-grid" id="projectsGrid">
+                        <!-- 프로젝트 카드가 여기에 동적으로 로드됩니다 -->
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">이름</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="gallery-section">
+                <div class="container">
+                    <h2 class="section-title">Gallery 📸</h2>
+                    <div class="gallery-grid" id="galleryGrid">
+                        <!-- 갤러리 이미지가 여기에 동적으로 로드됩니다 -->
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">이메일</label>
-                    <input type="email" id="email" name="email" required>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">About Me 👤</h2>
+                    <div class="about-card">
+                        <div class="about-avatar">👩‍🎓</div>
+                        <h3>유주연</h3>
+                        <p class="about-role">한국성서대학교 사회복지학과</p>
+                        <div class="about-info">
+                            <p>안녕하세요! 저는 사회복지에 열정을 가진 학생입니다.</p>
+                            <p>다양한 프로젝트를 통해 성장하고 있으며, 항상 새로운 도전을 즐깁니다.</p>
+                        </div>
+                        <div class="skills">
+                            <h4>Skills</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">사회복지</span>
+                                <span class="skill-tag">프로젝트 기획</span>
+                                <span class="skill-tag">커뮤니케이션</span>
+                                <span class="skill-tag">팀워크</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">메시지</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">보내기</button>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <h2 class="section-title">Contact 📧</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">보내기 ✉️</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 김원빈. All rights reserved.</p>
+            <p>&copy; 2024 유주연. All rights reserved. 💖</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
