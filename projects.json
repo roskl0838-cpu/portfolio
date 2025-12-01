@@ -12,6 +12,13 @@
     "description": "학생들을 위한 인터랙티브한 프로그래밍 학습 시스템",
     "technologies": ["Python", "Django", "JavaScript"],
     "link": "https://example.com/project2"
+  },
+  {
+    "id": 3,
+    "title": "모바일 앱 개발",
+    "description": "사용자 친화적인 모바일 애플리케이션 개발 프로젝트",
+    "technologies": ["React Native", "TypeScript", "Firebase"],
+    "link": "https://example.com/project3"
   }
 ]
 
